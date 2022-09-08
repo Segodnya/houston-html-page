@@ -35,10 +35,16 @@ td {
   border-collapse: collapse;
 }
 
-img + p {
+figcaption {
   font-style: italic;
 }
-.float-image {
-  float: right; /* Выравнивание по правому краю  */
-  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+
+figure {
+  clear: right;
+  float: right;
+  width: 10em;
+}
+
+figure > img {
+  width: 100%;
 }
